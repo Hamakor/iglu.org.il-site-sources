@@ -1,6 +1,6 @@
 #include "template.wml"
 
-<latemp_subject "The Israeli Group of Linux Users" />
+<latemp_subject "IGLU - The Israeli Group of Linux Users" />
 <latemp_version_control_id "$Id$" />
 
 <h2 id="about">About</h2>
@@ -27,25 +27,35 @@ $(ROOT)/images/sites/<get-var id />.png
 <table class="sites-table">
 <tr>
 <td>
-<img src="<img_loc id="hamakor" />" alt="Hamakor - Israeli FOSS Society" />
+<a href="http://www.hamakor.org.il/"><img 
+src="<img_loc id="hamakor" />" alt="Hamakor - Israeli FOSS Society" 
+/></a>
 Hamakor - the Israeli Society for Free Software and Open Source Code.
 </td>
 <td>
-<img src="<img_loc id="whatsup" />" alt="Whatsup - Israeli Open Source Portal" />
+<a href="http://www.whatsup.org.il/"><img 
+src="<img_loc id="whatsup" />" alt="Whatsup - Israeli Open Source Portal" 
+/></a>
 Whatsup.org.il - an Israeli (and Hebrew) portal for open-source.
 </td>
 <td>
-<img src="<img_loc id="linmagazine" />" alt="Linmagazine" /> Linmagazine -
+<a href="http://linmagazine.co.il/"><img 
+src="<img_loc id="linmagazine" />" alt="Linmagazine" 
+/></a> Linmagazine -
 a net magazine for free culture and software. (Note: mostly unmaintained).
 </td>
 </tr>
 <tr>
 <td>
-<img src="<img_loc id="chameleon" />" alt="Chameleon - Israeli SUSE Portal" />
+<a href="http://www.chameleon.org.il/"><img 
+src="<img_loc id="chameleon" />" alt="Chameleon - Israeli SUSE Portal"
+/></a>
 Chameleon - the Israeli SUSE/OpenSUSE Portal.
 </td>
 <td>
-<img src="<img_loc id="w2l" />" alt="Welcome to Linux" />
+<a href="http://welcome.linux.org.il/"><img 
+src="<img_loc id="w2l" />" alt="Welcome to Linux" 
+/></a>
 Introductory Presentations in Haifa, Tel Aviv and Jerusalem.
 </tr>
 </table>
