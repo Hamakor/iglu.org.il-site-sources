@@ -6,7 +6,6 @@
 <set-var latemp_with_head_meta_tags="1" />
 
 # Actually start the page template.
-#include "latemp/latemp-driver.wml"
 <latemp_lang "en-GB" />
 <latemp_encoding "utf-8" />
 <latemp_common_keywords "" />
@@ -20,3 +19,88 @@
 
 <latemp_affiliations_buttons>
 </latemp_affiliations_buttons>
+
+<latemp_extra_head_elements>
+<link rel="stylesheet" type="text/css" href="$(ROOT)/scenic-sanity-style.css" />
+</latemp_extra_head_elements>
+
+<latemp_html_header />
+<latemp_html_head_tag />
+<body>
+
+  <div id="page">
+
+    <!-- HEADER -->
+    <!-- Global Navigation -->
+    <div id="header">
+    <h3 class="hide">Global Navigation</h3>
+    <div class="nav-global-container">
+      <div class="nav-global nav-global-font">
+        <ul>
+          <li><a href="$(ROOT)/about.html">About Us</a></li>
+          <li><a href="$(ROOT)/contact/">Contact</a></li>
+        </ul>
+      </div>
+    </div>        
+
+    <!-- Sitename and Banner -->
+    <div class="site-name">
+        <latemp_default_h1_tag />
+    </div>                 
+    <div><img class="img-header" src="$(ROOT)/images/header.jpg" alt=""/></div>
+    
+    <!-- Main navigation -->                    
+    <h3 class="hide">Breadcrumbs Trail</h3>    
+    <div class="nav-main nav-main-font">
+      <latemp_get_breadcrumbs_trail />
+    </div>
+    
+    <!-- FRONT PAGE SIDEBANNER -->
+    <h3 class="hide">Main Navigation</h3>
+    <div class="sidebanner-frontpage">
+    <div class="buffer"></div>
+      <div class="navbar-sidebanner">
+        <latemp_get_nav_menu_html />
+        <latemp_affiliations_buttons_text />
+      </div>
+    </div>
+    </div>
+
+    <!-- WRAP CONTENT AND SIDEBAR -->
+    <div class="container-content-sidebar">            
+
+    <!--   CONTENT -->
+    <h3 class="hide">Content</h3>
+    <div class="content content-font">
+
+      <!-- Page title -->    
+      <latemp_default_h1_tag />
+      
+;;;      <div class="contentbox-container-left">
+;;;        <div class="contentbox-noshading">
+
+{#LATEMP_BODY#}
+;;;        </div>
+;;;      </div>
+    </div>
+    <!-- SIDEBAR -->
+    <h3 class="hide">Sidebar</h3>    
+    <div class="sidebar sidebar-font">
+
+      {#PERL_BEGIN_NEWS#}
+
+    </div>
+    
+    <!-- END WRAP CONTENT AND SIDEBAR -->
+    </div>    
+    
+    <!-- FOOTER -->
+    <h3 class="hide">Footer</h3>
+    <div class="footer footer-font">
+        <latemp_license_text />
+        <latemp_webmaster_text />
+    </div>
+  </div>
+</body>
+</html>
+{#LATEMP_BODY#:
