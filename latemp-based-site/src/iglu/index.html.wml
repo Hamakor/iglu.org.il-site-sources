@@ -1,5 +1,51 @@
 #include "template.wml"
 
-<latemp_subject "My Subject" />
+<latemp_subject "The Israeli Group of Linux Users" />
 <latemp_version_control_id "$Id$" />
 
+<h2 id="about">About</h2>
+
+<p>
+The Israeli Group of Linux Users (or IGLU for short) is an Israeli group
+of enthusiasts of Free and Open Source Software (a.k.a "FOSS" or "FLOSS").
+</p>
+
+<p>
+See <a href="$(ROOT)/israeli-foss-resources/">our guide to FOSS resources
+in Israel</a>.
+</p>
+
+<h2 id="web-sites">Web Sites</h2>
+
+<define-tag img_loc whitespace="delete">
+<preserve id />
+<set-var %attributes />
+$(ROOT)/images/sites/<get-var id />.png
+<restore id/>
+</define-tag>
+
+<table class="sites-table">
+<tr>
+<td>
+<img src="<img_loc id="hamakor" />" alt="Hamakor - Israeli FOSS Society" />
+Hamakor - the Israeli Society for Free Software and Open Source Code.
+</td>
+<td>
+<img src="<img_loc id="whatsup" />" alt="Whatsup - Israeli Open Source Portal" />
+Whatsup.org.il - an Israeli (and Hebrew) portal for open-source.
+</td>
+<td>
+<img src="<img_loc id="linmagazine" />" alt="Linmagazine" /> Linmagazine -
+a net magazine for free culture and software. (Note: mostly unmaintained).
+</td>
+</tr>
+<tr>
+<td>
+<img src="<img_loc id="chameleon" />" alt="Chameleon - Israeli SUSE Portal" />
+Chameleon - the Israeli SUSE/OpenSUSE Portal.
+</td>
+<td>
+<img src="<img_loc id="w2l" />" alt="Welcome to Linux" />
+Introductory Presentations in Haifa, Tel Aviv and Jerusalem.
+</tr>
+</table>

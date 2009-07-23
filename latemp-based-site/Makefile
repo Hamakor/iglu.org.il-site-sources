@@ -11,7 +11,8 @@ LATEMP_WML_FLAGS =$(shell latemp-config --wml-flags)
 
 WML_FLAGS += --passoption=2,-X3074 --passoption=3,-I../../lib/ \
 	--passoption=3,-w $(LATEMP_WML_FLAGS) -I../../ -DROOT~. \
-    -I../../lib/
+    -I../../lib/ \
+	-I $${HOME}/apps/wml
 
 all: dummy
 

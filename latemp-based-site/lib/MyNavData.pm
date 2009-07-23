@@ -7,9 +7,9 @@ use MyManageNews;
 
 my $hosts =
 {
-    'iglu.org.il' =>
+    "iglu" =>
     {
-        'base_url' => "http://myhost.mydomain/",
+        'base_url' => "http://iglu.org.il/",
     },
 };
 
@@ -38,7 +38,7 @@ sub get_news_category
 
 my $tree_contents =
 {
-    'host' => "iglu.org.il",
+    'host' => "iglu",
     'text' => "My Site",
     'title' => "My Site",
     'subs' =>
@@ -52,6 +52,10 @@ my $tree_contents =
             'url' => "about.html",
         },
         get_news_category(),
+        {
+            'text' => "Israeli Resources",
+            'url' => "israeli-foss-resources/",
+        },
         {
             'text' => "Links",
             'url' => "links.html",
