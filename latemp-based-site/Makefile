@@ -34,5 +34,5 @@ $(RSS_FEED): gen-feeds.pl lib/MyManageNews.pm
 .PHONY: 
 
 upload: all
-	cd $(ALL_DEST_BASE)/iglu.org.il && \
+	cd $(ALL_DEST_BASE)/iglu && \
 	$(RSYNC) -r * shlomif@tux.hamakor.org.il:/srv/raid/http/iglu.org.il/

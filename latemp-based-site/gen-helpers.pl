@@ -15,7 +15,7 @@ my $generator =
                    'dest_dir' => "\$(ALL_DEST_BASE)/$_",
                }, 
             } 
-            (qw(common iglu.org.il))
+            (qw(common iglu))
         ]
     );
 
