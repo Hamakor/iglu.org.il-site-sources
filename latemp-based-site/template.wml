@@ -12,9 +12,21 @@
 <latemp_author "Shlomi Fish" />
 
 <latemp_webmaster>
+
+<p>
+Webmastered by <a href="http://www.shlomifish.org/">Shlomi Fish</a> -
+<a href="mailto:shlomif@iglu.org.il">shlomif@iglu.org.il</a>.
+</p>
+
 </latemp_webmaster>
 
 <latemp_license>
+<p>
+Web style based on 
+<a href="http://wordpress.org/extend/themes/scenic-sanity">the
+Scenic Sanity WordPress theme</a> by 
+<a href="http://wordpress.org/extend/themes/profile/mujtaba91">mujtaba91</a>.
+</p>
 </latemp_license>
 
 <latemp_affiliations_buttons>
@@ -23,7 +35,7 @@
 <latemp_extra_head_elements>
 <link rel="stylesheet" type="text/css" href="$(ROOT)/scenic-sanity-style.css" />
 </latemp_extra_head_elements>
-
+<latemp_init_h_w_navmenu />
 <latemp_html_header />
 <latemp_html_head_tag />
 <body>
@@ -33,42 +45,28 @@
     <!-- HEADER -->
     <!-- Global Navigation -->
     <div id="header">
-    <h3 class="hide">Global Navigation</h3>
-    <div class="nav-global-container">
-      <div class="nav-global nav-global-font">
-        <ul>
-          <li><a href="$(ROOT)/about.html">About Us</a></li>
-          <li><a href="$(ROOT)/contact/">Contact</a></li>
-        </ul>
-      </div>
-    </div>        
-
     <!-- Sitename and Banner -->
-    <div class="site-name">
-        <latemp_default_h1_tag />
-    </div>                 
-    <div><img class="img-header" src="$(ROOT)/images/header.jpg" alt=""/></div>
+    <latemp_default_h1_tag />
+    <div id="description">Free and Open Source Software in Israel</div>
     
     <!-- Main navigation -->                    
     <h3 class="hide">Breadcrumbs Trail</h3>    
     <div class="nav-main nav-main-font">
       <latemp_get_breadcrumbs_trail />
     </div>
+    </div>
     
     <!-- FRONT PAGE SIDEBANNER -->
+    <div id="sidebar">
     <h3 class="hide">Main Navigation</h3>
-    <div class="sidebanner-frontpage">
-    <div class="buffer"></div>
       <div class="navbar-sidebanner">
         <latemp_get_nav_menu_html />
         <latemp_affiliations_buttons_text />
       </div>
     </div>
-    </div>
 
     <!-- WRAP CONTENT AND SIDEBAR -->
-    <div class="container-content-sidebar">            
-
+    <div id="content" class="container-content-sidebar narrwocolumn">
     <!--   CONTENT -->
     <h3 class="hide">Content</h3>
     <div class="content content-font">

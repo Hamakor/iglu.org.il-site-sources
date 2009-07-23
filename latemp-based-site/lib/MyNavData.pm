@@ -49,7 +49,7 @@ my $tree_contents =
         },
         {
             'text' => "About",
-            'url' => "about.html",
+            'url' => "about/",
         },
         get_news_category(),
         {
@@ -58,7 +58,7 @@ my $tree_contents =
         },
         {
             'text' => "Links",
-            'url' => "links.html",
+            'url' => "links/",
         },
     ],
 };
