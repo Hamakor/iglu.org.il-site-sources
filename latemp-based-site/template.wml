@@ -1,4 +1,4 @@
-# Read all the latemp macros 
+# Read all the latemp macros
 #include "latemp/latemp-prelude.wml"
 
 # You can put some customizations here
@@ -22,9 +22,9 @@ Webmastered by <a href="http://www.shlomifish.org/">Shlomi Fish</a> -
 
 <latemp_license>
 <p>
-Web style based on 
+Web style based on
 <a href="http://wordpress.org/extend/themes/scenic-sanity">the
-Scenic Sanity WordPress theme</a> by 
+Scenic Sanity WordPress theme</a> by
 <a href="http://wordpress.org/extend/themes/profile/mujtaba91">mujtaba91</a>.
 </p>
 </latemp_license>
@@ -48,14 +48,14 @@ Scenic Sanity WordPress theme</a> by
     <!-- Sitename and Banner -->
     <latemp_default_h1_tag />
     <div id="description">Free and Open Source Software in Israel</div>
-    
-    <!-- Main navigation -->                    
-    <h3 class="hide">Breadcrumbs Trail</h3>    
+
+    <!-- Main navigation -->
+    <h3 class="hide">Breadcrumbs Trail</h3>
     <div class="nav-main nav-main-font">
       <latemp_get_breadcrumbs_trail />
     </div>
     </div>
-    
+
     <!-- FRONT PAGE SIDEBANNER -->
     <div id="sidebar">
     <h3 class="hide">Main Navigation</h3>
@@ -71,9 +71,9 @@ Scenic Sanity WordPress theme</a> by
     <h3 class="hide">Content</h3>
     <div class="content content-font">
 
-      <!-- Page title -->    
+      <!-- Page title -->
       <latemp_default_h1_tag />
-      
+
 ;;;      <div class="contentbox-container-left">
 ;;;        <div class="contentbox-noshading">
 
@@ -82,16 +82,16 @@ Scenic Sanity WordPress theme</a> by
 ;;;      </div>
     </div>
     <!-- SIDEBAR -->
-    <h3 class="hide">Sidebar</h3>    
+    <h3 class="hide">Sidebar</h3>
     <div class="sidebar sidebar-font">
 
       {#PERL_BEGIN_NEWS#}
 
     </div>
-    
+
     <!-- END WRAP CONTENT AND SIDEBAR -->
-    </div>    
-    
+    </div>
+
     <!-- FOOTER -->
     <h3 class="hide">Footer</h3>
     <div class="footer footer-font">
