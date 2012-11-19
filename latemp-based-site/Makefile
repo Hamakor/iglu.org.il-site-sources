@@ -34,6 +34,8 @@ $(RSS_FEED): gen-feeds.pl lib/MyManageNews.pm
 
 .PHONY:
 
+REMOTE_UPLOAD_TARGET = shlomif@gnu.hamakor.org.il:/home/www/iglu.org.il/
+
 upload: all
 	cd $(ALL_DEST_BASE)/iglu && \
-	$(RSYNC) -a * shlomif@tux.hamakor.org.il:/srv/raid/http/iglu.org.il/
+	$(RSYNC) -a * $(REMOTE_UPLOAD_TARGET)
