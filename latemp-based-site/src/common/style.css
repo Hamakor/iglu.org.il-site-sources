@@ -2,7 +2,7 @@
     CSS Stylesheet for better-scm.berlios.de
         - Modified for http://www.iglu.org.il/
     Copyright (c) Shlomi Fish, 2003-2005
-    Feel free to use, modify and re-distribute under the terms of the 
+    Feel free to use, modify and re-distribute under the terms of the
     MIT X11 License (http://www.opensource.org/licenses/mit-license.php)
 
     $Id: style.css 175 2005-04-17 07:43:41Z shlomif $
@@ -37,7 +37,7 @@ p.desc { margin-left : 3em }
     margin-bottom: 0em;
 }
 .vcs
-{    
+{
     margin-top: 0.5em;
     clear: left;
 }
@@ -82,7 +82,7 @@ p.desc { margin-left : 3em }
     margin-right : 30px;
     padding-top: 0.5em;
 }
-/* Workaround to get the <hr /> element at the bottom to properly display 
+/* Workaround to get the <hr /> element at the bottom to properly display
    with Konqueror 3.3.x
    */
 .footer hr

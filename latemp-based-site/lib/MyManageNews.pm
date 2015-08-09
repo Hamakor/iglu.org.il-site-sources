@@ -11,11 +11,11 @@ use HTML::Latemp::News;
 
 my @news_items =
 (
-    (map 
-        { 
-            +{%$_, 
-                'author' => "Shlomi Fish", 
-                'category' => "My Site Category", 
+    (map
+        {
+            +{%$_,
+                'author' => "Shlomi Fish",
+                'category' => "My Site Category",
             }
         }
         (
