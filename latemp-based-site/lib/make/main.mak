@@ -19,6 +19,12 @@ all: dummy
 %.show:
 	@echo "$* = $($*)"
 
+define COPY
+	cp -f $< $@
+endef
+
+LATEMP_COPY = $(COPY)
+
 include include.mak
 include rules.mak
 
@@ -35,7 +41,12 @@ $(RSS_FEED): gen-feeds.pl lib/MyManageNews.pm
 .PHONY:
 
 REMOTE_UPLOAD_TARGET = shlomif@gnu.hamakor.org.il:/home/www/iglu.org.il/
+TEMP_SHLOMIFY__REMOTE_UPLOAD_TARGET = hostgator:public_html/IGLU-Site/
+
+upload_hamakor: all
+	cd $(ALL_DEST_BASE)/iglu && \
+	$(RSYNC) -a * $(REMOTE_UPLOAD_TARGET)
 
 upload: all
 	cd $(ALL_DEST_BASE)/iglu && \
-	$(RSYNC) -a * $(REMOTE_UPLOAD_TARGET)
+	$(RSYNC) -a * $(TEMP_SHLOMIFY__REMOTE_UPLOAD_TARGET)
